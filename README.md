@@ -1,7 +1,10 @@
 # npoint - dependency injection and wrapping for http handlers on top of gorilla/mux
 
-[![GoDoc](https://godoc.org/github.com/muir/nape?status.png)](http://godoc.org/github.com/muir/nape)
-[![Coverage](http://gocover.io/_badge/github.com/muir/nape)](https://gocover.io/github.com/muir/nape)
+[![GoDoc](https://godoc.org/github.com/muir/nape?status.png)](https://pkg.go.dev/github.com/muir/nape)
+![unit tests](https://github.com/muir/nape/actions/workflows/go.yml/badge.svg)
+[![report card](https://goreportcard.com/badge/github.com/muir/nape)](https://goreportcard.com/report/github.com/muir/nape)
+[![codecov](https://codecov.io/gh/muir/nape/branch/main/graph/badge.svg)](https://codecov.io/gh/muir/nape)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmuir%2Fnape.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmuir%2Fnape?ref=badge_shield)
 
 Install:
 
@@ -9,7 +12,7 @@ Install:
 
 ---
 
-This package was split out from [npoint](https://github.com/muir/nject/npoint) so that the
+This package was split out from [npoint](https://github.com/muir/npoint) so that the
 dependency upon gorilla/mux could be isolated.
 
 ---
@@ -18,7 +21,7 @@ This package attempts to solve several issues with http endpoint handlers:
 
  * Chaining actions to create composite handlers 
  * Wrapping endpoint handlers with before/after actions
- * Dependency injection for endpoint handlers
+ * Dependency injection for endpoint handlers (from [nject](https://github.com/muir/nject)
  * Binding handlers to their endpoints next to the code that defines the endpoints
  * Delaying initialization code execution until services are started allowing services that are not used to remain uninitialized
  * Reducing the cost of refactoring endpoint handlers passing data directly from producers to consumers without needing intermediaries to care about what is being passed
