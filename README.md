@@ -92,3 +92,12 @@ fails, executation of the handler chain is terminated.
 		}
 	}
 
+### Development status
+
+This repo and [npoint](https://github.com/muir/npoint) represent continued development of Blue Owl's 
+[npoint](https://github.com/BlueOwlOpenSource/nject/npoint) base.  Blue Owl's code
+has been in production use for years and has been unchanged for years.
+The core of npoint is mostly unchanged since taking over development from Blue Owl.
+
+With the version 0.2.0 release, npoint is anticipated to be stable.
+
