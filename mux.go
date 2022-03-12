@@ -6,7 +6,7 @@ import (
 	"sync"
 
 	"github.com/gorilla/mux"
-	"github.com/muir/nject/nject"
+	"github.com/muir/nject"
 )
 
 func registerServiceWithMux(name string, funcs ...interface{}) *ServiceRegistrationWithMux {
@@ -52,9 +52,9 @@ type EndpointRegistrationWithMux struct {
 	initialize func()
 	path       string
 	bound      bool
-	muxroutes []func(*mux.Route) *mux.Route
-	route     *mux.Route
-	err       error
+	muxroutes  []func(*mux.Route) *mux.Route
+	route      *mux.Route
+	err        error
 }
 
 type endpointBinderWithMux func(string, func(http.ResponseWriter, *http.Request)) *mux.Route
@@ -141,7 +141,7 @@ func (s *ServiceRegistrationWithMux) RegisterEndpoint(path string, funcs ...inte
 	s.lock.Lock()
 	defer s.lock.Unlock()
 	wmux := &EndpointRegistrationWithMux{
-		path: path,
+		path:      path,
 		muxroutes: make([]func(*mux.Route) *mux.Route, 0),
 	}
 	err := s.Collection.Append(path, funcs...).Bind(&wmux.finalFunc, &wmux.initialize)
@@ -164,7 +164,7 @@ func (s *ServiceWithMux) RegisterEndpoint(path string, funcs ...interface{}) *mu
 	s.lock.Lock()
 	defer s.lock.Unlock()
 	wmux := &EndpointRegistrationWithMux{
-			path: path,
+		path:      path,
 		muxroutes: make([]func(*mux.Route) *mux.Route, 0),
 	}
 	err := s.Collection.Append(path, funcs...).Bind(&wmux.finalFunc, &wmux.initialize)

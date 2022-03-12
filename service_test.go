@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	"github.com/gorilla/mux"
-	"github.com/muir/nject/nject"
 	"github.com/muir/nape"
+	"github.com/muir/nject"
 	"github.com/stretchr/testify/assert"
 )
 
