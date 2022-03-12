@@ -12,6 +12,7 @@ Install:
 
 ---
 
+Prior to [nject](https://github.com/muir/nject) version 0.2.0, this was part of that repo.
 This package was split out from [npoint](https://github.com/muir/npoint) so that the
 dependency upon gorilla/mux could be isolated.
 
