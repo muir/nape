@@ -16,7 +16,7 @@ type RequestBody []byte
 
 func LogError(inner func() error) {
 	// actually, ignore error
-	inner()
+	_ = inner()
 }
 
 func SaveRequest(inner func(RequestBody) error, r *http.Request) error {
