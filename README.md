@@ -1,4 +1,4 @@
-# npoint - dependency injection and wrapping for http handlers on top of gorilla/mux
+# nape - dependency injection and wrapping for http handlers on top of gorilla/mux
 
 [![GoDoc](https://godoc.org/github.com/muir/nape?status.png)](https://pkg.go.dev/github.com/muir/nape)
 ![unit tests](https://github.com/muir/nape/actions/workflows/go.yml/badge.svg)
