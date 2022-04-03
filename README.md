@@ -99,5 +99,9 @@ This repo and [npoint](https://github.com/muir/npoint) represent continued devel
 has been in production use for years and has been unchanged for years.
 The core of npoint is mostly unchanged since taking over development from Blue Owl.
 
-With the version 0.2.0 release, npoint is anticipated to be stable.
+With the version 0.2.0 release, nape is anticipated to be stable and possibly frozen.
+
+Ongoing work by David Sharnoff on this problem has taken a new direction:
+[nchi](https://github.com/muir/nchi).
+
 
