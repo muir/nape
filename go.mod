@@ -6,5 +6,5 @@ require (
 	github.com/gorilla/mux v1.8.0
 	github.com/muir/nject v1.3.2
 	github.com/muir/nvelope v0.3.2
-	github.com/stretchr/testify v1.8.0
+	github.com/stretchr/testify v1.8.1
 )
