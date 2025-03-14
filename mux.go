@@ -6,7 +6,7 @@ import (
 	"sync"
 
 	"github.com/gorilla/mux"
-	"github.com/muir/nject"
+	"github.com/muir/nject/v2"
 )
 
 func registerServiceWithMux(name string, funcs ...interface{}) *ServiceRegistrationWithMux {
